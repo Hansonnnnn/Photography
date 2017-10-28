@@ -1,5 +1,6 @@
 body{
     padding-top: 70px;
+    background-color: #faf9f5;
 }
 .fr-btn{
     margin-left: 82.9%;
@@ -8,4 +9,33 @@ body{
 .jumbotron{
     padding-bottom: 46px;
     margin-bottom: 0;
+}
+
+/*.firstBlock{*/
+    /*!*padding-left: 30px;*!*/
+    /*padding-right: 5px;*/
+/*}*/
+.secondBlock{
+    margin: 25px 10px ;
+    background-color: #FFFFFF;
+    box-shadow: #e8e8e8;
+}
+.imgUpFloat{
+    margin-top: -50px;
+}
+.carouselMar{
+    margin: 10px;
+}
+.nav-search-input-width{
+    width: 300px;
+}
+/*.thirdBlock{*/
+    /*padding-left: 5px;*/
+    /*!*padding-right: 30px;*!*/
+/*}*/
+.myCenter{
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
