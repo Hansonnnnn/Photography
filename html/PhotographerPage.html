@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../lib/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            padding-top: 70px;
+        }
+
+        .grid-sizer,
+        .grid-item { width: 33%; }
+
+        .grid-item {
+            /*height: 100px;*/
+            float: left;
+            background: #D26 ;
+            border: 2px solid hsla(0, 0%, 0%, 0.5);
+            border-radius: 5px;
+        }
+        .grid-item--width2 { width: 33%;
+            /*height: 200px;*/
+            background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509451855331&di=2891595b8697832e8e2c48c9387ad6d9&imgtype=0&src=http%3A%2F%2Fpic.baike.soso.com%2Fp%2F20130727%2F20130727094629-295085784.jpg");}
+        .grid-item--width3 { width: 33%;
+            /*height: 400px;*/
+            background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509459152794&di=edbc2b90855bcc797491175ac75fc9a9&imgtype=0&src=http%3A%2F%2Fwww.th7.cn%2Fd%2Ffile%2Fp%2F2015%2F03%2F13%2Fd2f5c58b8506708bd008ca19797d6e00.png");}
+        div.is-loading {
+            background: black url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/loading.gif');
+        }
+        div.is-loading img
+        {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="nav navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">YaoYue</a>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Search for..." style="width: 300px;">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">搜索</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-success navbar-btn " style="margin-left: 700px">我的</button>
+                    </div>
+                </div><!--End of container-fluid-->
+            </nav><!--End of nav-->
+        </div><!--End of row-->
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+                <img src="../images/1.png">
+                <h3>微软工作室</h3>
+            </div>
+            <div class="col-md-2">
+                <h4>入驻时间</h4>
+                <h4>所在地点</h4>
+            </div>
+            <div class="col-md-2">
+                <img src="../images/1.png">
+            </div>
+            <div class="col-md-2">
+                <img src="../images/1.png">
+            </div>
+            <div class="col-md-2">
+                <img src="../images/1.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <div>
+                <h2>工作室成立时间</h2>
+                <p>2017年11月11日</p>
+                <h2>工作室成员</h2>
+                <p>
+                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；
+                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；
+                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；
+                </p>
+                <h2>Slogan</h2>
+                <p>瞬间，转瞬即逝，而我们，希望帮您留住瞬间，使其永恒。</p>
+                <h2>获奖经历</h2>
+                <p>
+                    2008年 xxxxxxxxx奖<br>
+                    2009年 xxxxxxxxx奖<br>
+                    2010年 xxxxxxxxx奖<br>
+                </p>
+                <h2>主要拍摄作品风格</h2>
+                <p>温暖、安详、静谧、风景、细节</p>
+                <h2>过往成交价格</h2>
+                <h2>主要作品展示</h2>
+                <div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;">
+                            </div>
+                            <h3 class="text-center">Unique everything</h3>
+                            <p class="text-center">We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="text-center">Independent sellers</h3>
+                            <p class="text-center">Buy directly from someone who put their heart and soul into making something special.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="text-center">Secure shopping</h3>
+                            <p class="text-center">We use best-in-class technology to protect your transactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" role="complementary">
+            <nav class="affix">
+                <ul class="nav">
+                    <li>工作室成立时间</li>
+                    <li>工作室成员</li>
+                    <li>Slogan</li>
+                    <li>成员获奖经历</li>
+                    <li>主要拍摄作品风格</li>
+                    <li>价格</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<button type="button" id="append-button">+</button>
+    <div class="grid">
+        <!-- width of .grid-sizer used for columnWidth -->
+
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509385231607&di=515f5dbf038e2bf244d80f7c3ed2ba51&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2015%2F0509%2F1431145912929.jpg">-->
+        </div>
+        <div class="grid-item grid-item--width2">
+            <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509385231607&di=515f5dbf038e2bf244d80f7c3ed2ba51&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2015%2F0509%2F1431145912929.jpg">-->
+        </div>
+        <div class="grid-item grid-item--width3">
+
+        </div>
+
+    </div>
+
+</body>
+<script src="../lib/jQuery/jquery-3.2.1.min.js"></script>
+<script src="../lib/js_lib/imagesloaded.pkgd.min.js"></script>
+<script src="../lib/js_lib/masonry.pkgd.min.js"></script>
+<script src="../lib/js_lib/salvattore.min.js"></script>
+<script type="text/javascript">
+    let $grid = $('.grid').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 5
+    });
+    let imgLoad = imagesLoaded('.grid');
+    $('#append-button').on( 'click', function() {
+        let items = getItems();
+        imgLoad.progress(onProgress);
+        let $items = $(items);
+//        let elems = [ getItemElement(), getItemElement(), getItemElement() ];
+//        // make jQuery object
+//        let $elems = $( elems );
+        $grid.append( $items ).masonry( 'appended', $items );
+    });
+
+    function getItems() {
+        let items = "";
+        for(let i = 0;i < 3;i++){
+            items += getImageItem();
+        }
+        return items;
+    }
+    function getImageItem() {
+        let item = '<div class="grid-item is-loading">';
+        let src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509451855331&di=2891595b8697832e8e2c48c9387ad6d9&imgtype=0&src=http%3A%2F%2Fpic.baike.soso.com%2Fp%2F20130727%2F20130727094629-295085784.jpg";
+        item += '<img src="' + src + '" /> </div>';
+        return item;
+    }
+    //triggered after each item is loaded
+    function onProgress(imgLoad, image) {
+        alert("asdas");
+        let $item = $( image.img ).parent();
+        $item.removeClass('is-loading');
+        if ( !image.isLoaded ) {
+            $item.addClass('is-broken');
+        }
+    }
+
+    imgLoad.on( 'always', function() {
+        console.log( imgLoad.images.length + ' images loaded' );
+        // detect which image is broken
+        for ( let i = 0, len = imgLoad.images.length; i < len; i++ ) {
+            let image = imgLoad.images[i];
+            let result = image.isLoaded ? 'loaded' : 'broken';
+            console.log( 'image is ' + result + ' for ' + image.img.src );
+        }
+    });
+
+
+</script>
+</html>
