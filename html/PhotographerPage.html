@@ -6,7 +6,12 @@
     <link href="../lib/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body{
-            padding-top: 70px;
+            padding-top: 50px;
+            background-color: #e8e8e8;
+            position: relative;
+        }
+        button{
+            outline: none;
         }
 
         .grid-sizer,
@@ -32,13 +37,266 @@
         {
             opacity: 0;
         }
+        .secondBlock{
+            margin: 15px 0px ;
+            background-color: #FFFFFF;
+            box-shadow: #e8e8e8;
+        }
+        .mainBodyInnerSettings{
+            margin: 40px;
+        }
+        .mainBodyInnerSettings h3{
+            padding-top: 70px;
+            margin-top: -60px;
+
+        }
+        .mainBodyOuterSettings{
+            margin-top: -5px;
+        }
+        .whiteBackgroundColor{
+            background-color: white;
+        }
+        .nameMargin{
+            margin-left: 15px;
+        }
+        .storyBlock{
+            width: 280px;
+            height: 280px;
+            border-radius: 6px;
+            background-size: cover;
+            background: url(https://cn-ali.muscache.com/im/pictures/365e4ce9-836e-459a-a3b1-47677484eecb.jpg?aki_policy=large) center;
+        }
+        .logoBlock{
+            background-position: center;
+            background-size: cover;
+            border-radius: 6px;
+            width: 150px;
+            height: 150px;
+        }
+        #locator{
+            margin-top: -70px;
+            padding-top: 90px;
+        }
+        .headerBlock{
+            margin-top: -25px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 90px;
+        }
+        .headerBlock-label-settings{
+            margin-top: 20px;
+        }
+        .headerBlock-mainIndex-innerSettings{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: dotted 2px black;
+            margin-left: 5px;
+        }
+        .headerBlock-mainIndex-outerSettings{
+            margin-left: 30px;
+        }
+        .verticalCenter{
+            line-height: 106px;
+        }
+        .buttonMarginTop{
+            margin-top: -35px;
+        }
+        .buttonMarginBottom{
+            margin-bottom: 30px;
+        }
+        .affix-top
+        {
+            top:200px;
+            /*padding-left: 13px;*/
+            /*width: 213px;*/
+        }
+        .affix
+        {
+            top:185px;
+            /*width: 213px;*/
+        }
+        .affix-bottom
+        {
+            /*position: absolute;*/
+            /*width: 213px;*/
+            /*bottom: 500px;*/
+        }
+        .nav .active {
+            font-weight: bold;
+            background: white;
+        }
+        .nav .active .nav {
+            display: block;
+        }
+        #backToLocator{
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+        }
+        #backToLocator:hover{
+            background-color: #EEEEEE;
+            text-decoration: none;
+        }
+        .nav>li>a{
+            color: black;
+        }
+
+
+
+        /**,:after,:before{box-sizing:border-box}*/
+        /*.clearfix:after,.clearfix:before{content:'';display:table}*/
+        /*.clearfix:after{clear:both;display:block}*/
+        /*a{color:inherit;text-decoration:none}*/
+
+        .login-wrap{
+            width:100%;
+            margin:auto;
+            max-width:510px;
+            min-height:630px;
+            position:relative;
+            background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+            box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+        }
+        .login-html{
+            width:100%;
+            height:100%;
+            position:absolute;
+            padding:60px 70px 50px 70px;
+            background:rgba(40,57,101,.9);
+        }
+        .login-html .sign-in-htm,
+        .login-html .sign-up-htm{
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            position:absolute;
+            transform:rotateY(180deg);
+            backface-visibility:hidden;
+            transition:all .4s linear;
+        }
+        .login-html .sign-in,
+        .login-html .sign-up,
+        .login-form .group .check{
+            display:none;
+        }
+        .login-html .tab,
+        .login-form .group .label,
+        .login-form .group .button{
+            text-transform:uppercase;
+        }
+        .login-html .tab{
+            font-size:22px;
+            padding-bottom:5px;
+            margin:0 15px 10px 0;
+            display:inline-block;
+            border-bottom:2px solid transparent;
+        }
+        .login-html .sign-in:checked + .tab,
+        .login-html .sign-up:checked + .tab{
+            color:#fff;
+            border-color:#1161ee;
+        }
+        .login-form{
+            min-height:345px;
+            position:relative;
+            perspective:1000px;
+            transform-style:preserve-3d;
+        }
+        .login-form .group{
+            margin-bottom:15px;
+        }
+        .login-form .group .label,
+        .login-form .group .input,
+        .login-form .group .button{
+            width:100%;
+            color:#fff;
+            display:block;
+        }
+        .login-form .group .input,
+        .login-form .group .button{
+            border:none;
+            padding:15px 20px;
+            border-radius:25px;
+            background:rgba(255,255,255,.1);
+        }
+        .login-form .group input[data-type="password"]{
+            text-security:circle;
+            -webkit-text-security:circle;
+        }
+        .login-form .group .label{
+            color:#aaa;
+            font-size:12px;
+        }
+        .login-form .group .button{
+            background:#1161ee;
+        }
+        .login-form .group #signUpButton{
+            margin-top: 30px;
+        }
+        .login-form .group label .icon{
+            width:15px;
+            height:15px;
+            border-radius:2px;
+            position:relative;
+            display:inline-block;
+            background:rgba(255,255,255,.1);
+        }
+        .login-form .group label .icon:before,
+        .login-form .group label .icon:after{
+            content:'';
+            width:10px;
+            height:2px;
+            background:#fff;
+            position:absolute;
+            transition:all .2s ease-in-out 0s;
+        }
+        .login-form .group label .icon:before{
+            left:3px;
+            width:5px;
+            bottom:6px;
+            transform:scale(0) rotate(0);
+        }
+        .login-form .group label .icon:after{
+            top:6px;
+            right:0;
+            transform:scale(0) rotate(0);
+        }
+        .login-form .group .check:checked + label{
+            color:#fff;
+        }
+        .login-form .group .check:checked + label .icon{
+            background:#1161ee;
+        }
+        .login-form .group .check:checked + label .icon:before{
+            transform:scale(1) rotate(45deg);
+        }
+        .login-form .group .check:checked + label .icon:after{
+            transform:scale(1) rotate(-45deg);
+        }
+        .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+            transform:rotate(0);
+        }
+        .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+            transform:rotate(0);
+        }
+
+        .hr{
+            height:2px;
+            margin:30px 0 20px 0;
+            background:rgba(255,255,255,.2);
+        }
+        .foot-lnk{
+            text-align:center;
+        }
     </style>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".scrollspy">
     <div class="container-fluid">
         <div class="row">
-            <nav class="nav navbar navbar-default navbar-fixed-top">
+            <nav class="nav navbar navbar-default navbar-fixed-top" id="navBar">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">YaoYue</a>
@@ -52,108 +310,387 @@
                                 </div>
                             </div>
                         </form>
-                        <button type="button" class="btn btn-success navbar-btn " style="margin-left: 700px">我的</button>
+                        <button type="button" class="btn btn-success navbar-btn " style="margin-left: 700px" data-toggle="modal" data-target="#loginModal">我的</button>
                     </div>
                 </div><!--End of container-fluid-->
             </nav><!--End of nav-->
         </div><!--End of row-->
         <br>
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-                <img src="../images/1.png">
-                <h3>微软工作室</h3>
-            </div>
-            <div class="col-md-2">
-                <h4>入驻时间</h4>
-                <h4>所在地点</h4>
-            </div>
-            <div class="col-md-2">
-                <img src="../images/1.png">
-            </div>
-            <div class="col-md-2">
-                <img src="../images/1.png">
-            </div>
-            <div class="col-md-2">
-                <img src="../images/1.png">
-            </div>
+        <div id="locator"></div>
+        <div class="row headerBlock whiteBackgroundColor" id="headerBlock">
+                <div class="col-md-2">
+                    <div class="logoBlock" id="logoBlock" style="background-image: url(https://cn-ali.muscache.com/im/pictures/10e2b8c6-903d-4a2b-a28c-599749ec8381.jpg?aki_policy=large)"></div>
+                    <h3 class="nameMargin">北影工作室</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="headerBlock-label-settings">
+                        <span class="h5">入驻时间：</span>
+                        <span>2017-10-16</span>
+                    </div>
+                    <div class="headerBlock-label-settings">
+                        <span class="h5">所在地点：</span>
+                        <span>中国-江苏省-南京市-鼓楼区</span>
+                    </div>
+                    <div class="headerBlock-label-settings">
+                        <span class="h5">作品风格：</span>
+                        <span>温暖、安详、静谧、细节</span>
+                    </div>
+                    <div class="headerBlock-label-settings">
+                        <span class="h5">主页浏览次数：</span>
+                        <span>161次</span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center headerBlock-mainIndex-outerSettings">
+                    <div class="headerBlock-mainIndex-innerSettings">
+                        <h1 class="verticalCenter">98%</h1>
+                    </div>
+                    <h4>好评程度</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="headerBlock-mainIndex-innerSettings">
+                        <h1 class="verticalCenter">101</h1>
+                    </div>
+                    <h4>邀约次数</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="headerBlock-mainIndex-innerSettings text-center">
+                        <h1 class="verticalCenter">1000+</h1>
+                    </div>
+                    <h4>收录作品数</h4>
+                </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-9" role="main">
-            <div>
-                <h2>工作室成立时间</h2>
+    <div class="row whiteBackgroundColor buttonMarginTop">
+        <div class="col-md-10 col-md-offset-1 buttonMarginBottom">
+            <button style="outline: none;" type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#YaoYueModal">发送邀约YaoYue</button>
+        </div>
+    </div>
+    <br>
+    <div class="row mainBodyOuterSettings">
+        <div class="col-md-9  whiteBackgroundColor" role="main">
+            <div class="mainBodyInnerSettings">
+                <h3 id="setupTimeTag">工作室成立时间</h3>
+                <hr>
                 <p>2017年11月11日</p>
-                <h2>工作室成员</h2>
+                <br>
+                <h3 id="memberTag">工作室成员</h3>
+                <hr>
                 <p>
-                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；
-                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；
+                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；<br>
+                    谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；<br>
                     谢振宇：专业级摄影师，曾就职于专业摄影学院，拍摄大型纪录片以及专业人像摄影招聘，拥有丰富拍照摄影经验；
                 </p>
-                <h2>Slogan</h2>
+                <br>
+                <h3 id="sloganTag">Slogan</h3>
+                <hr>
                 <p>瞬间，转瞬即逝，而我们，希望帮您留住瞬间，使其永恒。</p>
-                <h2>获奖经历</h2>
-                <p>
-                    2008年 xxxxxxxxx奖<br>
-                    2009年 xxxxxxxxx奖<br>
-                    2010年 xxxxxxxxx奖<br>
-                </p>
-                <h2>主要拍摄作品风格</h2>
-                <p>温暖、安详、静谧、风景、细节</p>
-                <h2>过往成交价格</h2>
-                <h2>主要作品展示</h2>
+                <br>
+                <h3 id="prizeTag">获奖作品</h3>
+                <hr>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" style="max-width: 100%" src="https://cn-ali.muscache.com/im/pictures/24898578-413c-414d-b4b5-cb4c83550b7f.jpg?aki_policy=xx_large" alt="日本"  >
+                            <div class="carousel-caption">
+                                2017 IPA国际摄影奖（深度视角）专业组 深度视角 一等奖
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://cn-ali.muscache.com/im/pictures/53c82261-665e-41f3-91d6-281db16062e7.jpg?aki_policy=xx_large" alt="日本">
+                            <div class="carousel-caption">
+                                2017 IPA国际摄影奖（深度视角）专业组 深度视角 一等奖
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://cn-ali.muscache.com/im/pictures/ec181a50-0733-4e26-a385-61f7ad9fe364.jpg?aki_policy=xx_large" alt="日本">
+                            <div class="carousel-caption">
+                                2017 IPA国际摄影奖（深度视角）专业组 深度视角 一等奖
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://cn-ali.muscache.com/im/pictures/843c1d6d-f7cb-4b54-aa87-76976fa89025.jpg?aki_policy=xx_large" alt="杭州">
+                            <div class="carousel-caption">
+                                2017 IPA国际摄影奖（深度视角）专业组 深度视角 一等奖
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://cn-ali.muscache.com/im/pictures/01d971d4-38b2-4198-8bfe-085ffaa3ed24.jpg?aki_policy=xx_large" alt="杭州">
+                            <div class="carousel-caption">
+                                2017 IPA国际摄影奖（深度视角）专业组 深度视角 一等奖
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://cn-ali.muscache.com/im/pictures/951a7af3-df3d-4b22-8413-32fa28eed3b1.jpg?aki_policy=xx_large" alt="杭州">
+                            <div class="carousel-caption">
+                                2017 IPA国际摄影奖（深度视角）专业组 深度视角 一等奖
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <br>
+                <h3 id="beforePriceTag">过往成交价格</h3>
+                <hr>
+                <br>
+                <h3 id="storyTag">和Ta们的故事</h3>
+                <hr>
                 <div>
                     <div class="row">
                         <div class="col-md-4">
-                            <div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;">
+                            <div class="secondBlock">
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/365e4ce9-836e-459a-a3b1-47677484eecb.jpg?aki_policy=large) center"></div>
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">自在山城 | Coffee Holic</h3>
+                                <p class="text-center">我素来不喜欢咖啡太抢戏的咖啡店，但如果做不到基本的好喝，也不会去</p>
                             </div>
-                            <h3 class="text-center">Unique everything</h3>
-                            <p class="text-center">We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).</p>
                         </div>
                         <div class="col-md-4">
-                            <h3 class="text-center">Independent sellers</h3>
-                            <p class="text-center">Buy directly from someone who put their heart and soul into making something special.</p>
+                            <div class="secondBlock">
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/1d3d6aba-7c2f-4fbc-8f16-466b0886cab0.jpg?aki_policy=large) center"></div>
+
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">京都，今年的樱花开得有点迟</h3>
+                                <p class="text-center">看过冬天的北海道和秋天的京都，我说，我一定要在樱花季去一次日本。</p>
+                            </div>
                         </div>
                         <div class="col-md-4">
-                            <h3 class="text-center">Secure shopping</h3>
-                            <p class="text-center">We use best-in-class technology to protect your transactions.</p>
+                            <div class="secondBlock">
+
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/1221a318-bf78-4250-be3f-b49761678a66.jpg?aki_policy=large) center"></div>
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">集美的好，我拍不出来</h3>
+                                <p class="text-center">我拍不出它的雕梁画栋，也拍不全它的「博物观」里石板上刻的内容，只是心里想着还会再来。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="secondBlock">
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/365e4ce9-836e-459a-a3b1-47677484eecb.jpg?aki_policy=large) center"></div>
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">自在山城 | Coffee Holic</h3>
+                                <p class="text-center">我素来不喜欢咖啡太抢戏的咖啡店，但如果做不到基本的好喝，也不会去</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="secondBlock">
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/1d3d6aba-7c2f-4fbc-8f16-466b0886cab0.jpg?aki_policy=large) center"></div>
+
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">京都，今年的樱花开得有点迟</h3>
+                                <p class="text-center">看过冬天的北海道和秋天的京都，我说，我一定要在樱花季去一次日本。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="secondBlock">
+
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/1221a318-bf78-4250-be3f-b49761678a66.jpg?aki_policy=large) center"></div>
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">集美的好，我拍不出来</h3>
+                                <p class="text-center">我拍不出它的雕梁画栋，也拍不全它的「博物观」里石板上刻的内容，只是心里想着还会再来。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="secondBlock">
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/365e4ce9-836e-459a-a3b1-47677484eecb.jpg?aki_policy=large) center"></div>
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">自在山城 | Coffee Holic</h3>
+                                <p class="text-center">我素来不喜欢咖啡太抢戏的咖啡店，但如果做不到基本的好喝，也不会去</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="secondBlock">
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/1d3d6aba-7c2f-4fbc-8f16-466b0886cab0.jpg?aki_policy=large) center"></div>
+
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">京都，今年的樱花开得有点迟</h3>
+                                <p class="text-center">看过冬天的北海道和秋天的京都，我说，我一定要在樱花季去一次日本。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="secondBlock">
+
+                                <div style="width: 280px;height: 280px;border-radius: 6px; background-size: cover; background: url(https://cn-ali.muscache.com/im/pictures/1221a318-bf78-4250-be3f-b49761678a66.jpg?aki_policy=large) center"></div>
+                                <!--<div style=" width: 100%;height: 100%;background-image: url(https://cn-ali.muscache.com/im/pictures/dbed6dd0-71b2-4168-b7be-55608be5aa01.jpg?aki_policy=large); position: absolute !important; background-position: 50% 50%;background-size: cover !important;"></div>-->
+                                <h3 class="text-center">集美的好，我拍不出来</h3>
+                                <p class="text-center">我拍不出它的雕梁画栋，也拍不全它的「博物观」里石板上刻的内容，只是心里想着还会再来。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3" role="complementary">
-            <nav class="affix">
-                <ul class="nav">
-                    <li>工作室成立时间</li>
-                    <li>工作室成员</li>
-                    <li>Slogan</li>
-                    <li>成员获奖经历</li>
-                    <li>主要拍摄作品风格</li>
-                    <li>价格</li>
+        <div class="col-md-2 scrollspy" role="complementary">
+            <!--data-offset-bottom="300"-->
+            <nav class="affix-top" data-spy="affix"  data-offset-top="206" >
+                <ul class="nav hidden-xs hidden-sm">
+                    <li><a href="#setupTimeTag">工作室成立时间</a></li>
+                    <li><a href="#memberTag">工作室成员</a></li>
+                    <li><a href="#sloganTag">Slogan</a></li>
+                    <li><a href="#prizeTag">获奖作品</a></li>
+                    <li><a href="#beforePriceTag">过往成交价格</a></li>
+                    <li><a href="#storyTag">和Ta们的故事</a></li>
                 </ul>
+                <a id="backToLocator" href="#locator">返回顶部</a>
             </nav>
         </div>
     </div>
-<button type="button" id="append-button">+</button>
-    <div class="grid">
-        <!-- width of .grid-sizer used for columnWidth -->
+<!--<button type="button" id="append-button">+</button>-->
+    <!--<div class="grid">-->
+        <!--&lt;!&ndash; width of .grid-sizer used for columnWidth &ndash;&gt;-->
 
-        <div class="grid-sizer"></div>
-        <div class="grid-item">
-            <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509385231607&di=515f5dbf038e2bf244d80f7c3ed2ba51&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2015%2F0509%2F1431145912929.jpg">-->
-        </div>
-        <div class="grid-item grid-item--width2">
-            <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509385231607&di=515f5dbf038e2bf244d80f7c3ed2ba51&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2015%2F0509%2F1431145912929.jpg">-->
-        </div>
-        <div class="grid-item grid-item--width3">
+        <!--<div class="grid-sizer"></div>-->
+        <!--<div class="grid-item">-->
+            <!--&lt;!&ndash;<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509385231607&di=515f5dbf038e2bf244d80f7c3ed2ba51&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2015%2F0509%2F1431145912929.jpg">&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="grid-item grid-item&#45;&#45;width2">-->
+            <!--&lt;!&ndash;<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509385231607&di=515f5dbf038e2bf244d80f7c3ed2ba51&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2015%2F0509%2F1431145912929.jpg">&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="grid-item grid-item&#45;&#45;width3">-->
 
-        </div>
+        <!--</div>-->
 
+    <!--</div>-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="login-wrap">
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                    <div class="login-form">
+                        <div class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="Sign In">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <label><a href="#forgot">Forgot Password?</a></label>
+                            </div>
+                        </div>
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <input id="user" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Repeat Password</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Email Address</label>
+                                <input id="pass" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="Sign Up" id="signUpButton">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <label for="tab-1"><a>Already Member?</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div class="modal fade" id="YaoYueModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginModalLabel">填写邀约YaoYue信息</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="nameField" class="control-label">真实姓名</label>
+                                    <input type="text" id="nameField" class="form-control" placeholder="请输入您的真实姓名：">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="telField" class="control-label">手机号</label>
+                                    <input type="tel" id="telField" class="form-control" placeholder="请输入您的手机号：">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addressField">拍摄地点</label>
+                            <input type="text" id="addressField" class="form-control" placeholder="请输入为您拍摄照片的拍摄地点：">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">您期望的合理的价格区间</label>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <input type="number" class="form-control" placeholder="您认为合理的最低价格">
+                                </div>
+                                <div class="col-sm-2 text-center">
+                                    <p class="form-control-static">--</p>
+                                </div>
+                                <div class="col-sm-5">
+                                    <input type="number" class="form-control" placeholder="您认为合理的最高价格">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">拍摄内容描述</label>
+                            <textarea id="" class="form-control" rows="4" placeholder="这里请您写下关于您期望拍摄的照片、视频、作品的内容主题"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="requirementsField">拍摄要求</label>
+                            <textarea id="requirementsField" class="form-control" rows="4" placeholder="这里请您写下关于您对照片或摄影师的要求"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">发送邀约YaoYue</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="../lib/jQuery/jquery-3.2.1.min.js"></script>
+<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 <script src="../lib/js_lib/imagesloaded.pkgd.min.js"></script>
 <script src="../lib/js_lib/masonry.pkgd.min.js"></script>
 <script src="../lib/js_lib/salvattore.min.js"></script>
